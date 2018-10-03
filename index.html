@@ -16,9 +16,19 @@
 
 <body>
    <script>
+      var jacobArray = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+      var jacobSelector = [];
+      
+      while (jacobArray.length > 0) {
+         var jacobIndex = Math.floor(Math.random() * jacobArray.length);
+         var randomJacob = jacobArray[jacobIndex];
+         jacobSelector.push(randomJacob);
+         jacobArray.splice(jacobIndex, 1);
+      }
+      
       function Jacob(jacobId) {
-          var jacob = document.getElementById("jacob_"+jacobId);
-          jacob.play();
+         var jacob = document.getElementById("jacob_"+jacobSelector[jacobId-1]);
+         jacob.play();
       }
    </script>
    
