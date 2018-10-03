@@ -28,6 +28,8 @@
       
       function Jacob(jacobId) {
          var jacob = document.getElementById("jacob_"+jacobSelector[jacobId-1]);
+         jacob.pause();
+         jacob.currentTime = 0;
          jacob.play();
       }
    </script>
