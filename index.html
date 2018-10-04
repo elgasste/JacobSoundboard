@@ -17,6 +17,7 @@
 <body>
    <script>
       var jacobArray = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+      var jacobCounter = [0,0,0,0,0,0,0,0,0,0,0,0,0];
       var jacobSelector = [];
       
       while (jacobArray.length > 0) {
@@ -27,26 +28,83 @@
       }
       
       function Jacob(jacobId) {
-         var jacob = document.getElementById("jacob_"+jacobSelector[jacobId-1]);
+         var i = jacobId-1;
+         var jacob = document.getElementById("jacob_"+jacobSelector[i]+"_"+jacobCounter[i]);
+         jacobCounter[i]++;
+         if (jacobCounter[i] == 5) {
+            jacobCounter[i] = 0;
+         }
          jacob.pause();
          jacob.currentTime = 0;
          jacob.play();
       }
    </script>
    
-   <audio id="jacob_1" src="audio/jacob_1.wav" autostart="false" ></audio>
-   <audio id="jacob_2" src="audio/jacob_2.wav" autostart="false" ></audio>
-   <audio id="jacob_3" src="audio/jacob_3.wav" autostart="false" ></audio>
-   <audio id="jacob_4" src="audio/jacob_4.wav" autostart="false" ></audio>
-   <audio id="jacob_5" src="audio/jacob_5.wav" autostart="false" ></audio>
-   <audio id="jacob_6" src="audio/jacob_6.wav" autostart="false" ></audio>
-   <audio id="jacob_7" src="audio/jacob_7.wav" autostart="false" ></audio>
-   <audio id="jacob_8" src="audio/jacob_8.wav" autostart="false" ></audio>
-   <audio id="jacob_9" src="audio/jacob_9.wav" autostart="false" ></audio>
-   <audio id="jacob_10" src="audio/jacob_10.wav" autostart="false" ></audio>
-   <audio id="jacob_11" src="audio/jacob_11.wav" autostart="false" ></audio>
-   <audio id="jacob_12" src="audio/jacob_12.wav" autostart="false" ></audio>
-   <audio id="jacob_13" src="audio/jacob_13.wav" autostart="false" ></audio>
+   <audio id="jacob_1_0" src="audio/jacob_1.wav" autostart="false" ></audio>
+   <audio id="jacob_1_1" src="audio/jacob_1.wav" autostart="false" ></audio>
+   <audio id="jacob_1_2" src="audio/jacob_1.wav" autostart="false" ></audio>
+   <audio id="jacob_1_3" src="audio/jacob_1.wav" autostart="false" ></audio>
+   <audio id="jacob_1_4" src="audio/jacob_1.wav" autostart="false" ></audio>
+   <audio id="jacob_2_0" src="audio/jacob_2.wav" autostart="false" ></audio>
+   <audio id="jacob_2_1" src="audio/jacob_2.wav" autostart="false" ></audio>
+   <audio id="jacob_2_2" src="audio/jacob_2.wav" autostart="false" ></audio>
+   <audio id="jacob_2_3" src="audio/jacob_2.wav" autostart="false" ></audio>
+   <audio id="jacob_2_4" src="audio/jacob_2.wav" autostart="false" ></audio>
+   <audio id="jacob_3_0" src="audio/jacob_3.wav" autostart="false" ></audio>
+   <audio id="jacob_3_1" src="audio/jacob_3.wav" autostart="false" ></audio>
+   <audio id="jacob_3_2" src="audio/jacob_3.wav" autostart="false" ></audio>
+   <audio id="jacob_3_3" src="audio/jacob_3.wav" autostart="false" ></audio>
+   <audio id="jacob_3_4" src="audio/jacob_3.wav" autostart="false" ></audio>
+   <audio id="jacob_4_0" src="audio/jacob_4.wav" autostart="false" ></audio>
+   <audio id="jacob_4_1" src="audio/jacob_4.wav" autostart="false" ></audio>
+   <audio id="jacob_4_2" src="audio/jacob_4.wav" autostart="false" ></audio>
+   <audio id="jacob_4_3" src="audio/jacob_4.wav" autostart="false" ></audio>
+   <audio id="jacob_4_4" src="audio/jacob_4.wav" autostart="false" ></audio>
+   <audio id="jacob_5_0" src="audio/jacob_5.wav" autostart="false" ></audio>
+   <audio id="jacob_5_1" src="audio/jacob_5.wav" autostart="false" ></audio>
+   <audio id="jacob_5_2" src="audio/jacob_5.wav" autostart="false" ></audio>
+   <audio id="jacob_5_3" src="audio/jacob_5.wav" autostart="false" ></audio>
+   <audio id="jacob_5_4" src="audio/jacob_5.wav" autostart="false" ></audio>
+   <audio id="jacob_6_0" src="audio/jacob_6.wav" autostart="false" ></audio>
+   <audio id="jacob_6_1" src="audio/jacob_6.wav" autostart="false" ></audio>
+   <audio id="jacob_6_2" src="audio/jacob_6.wav" autostart="false" ></audio>
+   <audio id="jacob_6_3" src="audio/jacob_6.wav" autostart="false" ></audio>
+   <audio id="jacob_6_4" src="audio/jacob_6.wav" autostart="false" ></audio>
+   <audio id="jacob_7_0" src="audio/jacob_7.wav" autostart="false" ></audio>
+   <audio id="jacob_7_1" src="audio/jacob_7.wav" autostart="false" ></audio>
+   <audio id="jacob_7_2" src="audio/jacob_7.wav" autostart="false" ></audio>
+   <audio id="jacob_7_3" src="audio/jacob_7.wav" autostart="false" ></audio>
+   <audio id="jacob_7_4" src="audio/jacob_7.wav" autostart="false" ></audio>
+   <audio id="jacob_8_0" src="audio/jacob_8.wav" autostart="false" ></audio>
+   <audio id="jacob_8_1" src="audio/jacob_8.wav" autostart="false" ></audio>
+   <audio id="jacob_8_2" src="audio/jacob_8.wav" autostart="false" ></audio>
+   <audio id="jacob_8_3" src="audio/jacob_8.wav" autostart="false" ></audio>
+   <audio id="jacob_8_4" src="audio/jacob_8.wav" autostart="false" ></audio>
+   <audio id="jacob_9_0" src="audio/jacob_9.wav" autostart="false" ></audio>
+   <audio id="jacob_9_1" src="audio/jacob_9.wav" autostart="false" ></audio>
+   <audio id="jacob_9_2" src="audio/jacob_9.wav" autostart="false" ></audio>
+   <audio id="jacob_9_3" src="audio/jacob_9.wav" autostart="false" ></audio>
+   <audio id="jacob_9_4" src="audio/jacob_9.wav" autostart="false" ></audio>
+   <audio id="jacob_10_0" src="audio/jacob_10.wav" autostart="false" ></audio>
+   <audio id="jacob_10_1" src="audio/jacob_10.wav" autostart="false" ></audio>
+   <audio id="jacob_10_2" src="audio/jacob_10.wav" autostart="false" ></audio>
+   <audio id="jacob_10_3" src="audio/jacob_10.wav" autostart="false" ></audio>
+   <audio id="jacob_10_4" src="audio/jacob_10.wav" autostart="false" ></audio>
+   <audio id="jacob_11_0" src="audio/jacob_11.wav" autostart="false" ></audio>
+   <audio id="jacob_11_1" src="audio/jacob_11.wav" autostart="false" ></audio>
+   <audio id="jacob_11_2" src="audio/jacob_11.wav" autostart="false" ></audio>
+   <audio id="jacob_11_3" src="audio/jacob_11.wav" autostart="false" ></audio>
+   <audio id="jacob_11_4" src="audio/jacob_11.wav" autostart="false" ></audio>
+   <audio id="jacob_12_0" src="audio/jacob_12.wav" autostart="false" ></audio>
+   <audio id="jacob_12_1" src="audio/jacob_12.wav" autostart="false" ></audio>
+   <audio id="jacob_12_2" src="audio/jacob_12.wav" autostart="false" ></audio>
+   <audio id="jacob_12_3" src="audio/jacob_12.wav" autostart="false" ></audio>
+   <audio id="jacob_12_4" src="audio/jacob_12.wav" autostart="false" ></audio>
+   <audio id="jacob_13_0" src="audio/jacob_13.wav" autostart="false" ></audio>
+   <audio id="jacob_13_1" src="audio/jacob_13.wav" autostart="false" ></audio>
+   <audio id="jacob_13_2" src="audio/jacob_13.wav" autostart="false" ></audio>
+   <audio id="jacob_13_3" src="audio/jacob_13.wav" autostart="false" ></audio>
+   <audio id="jacob_13_4" src="audio/jacob_13.wav" autostart="false" ></audio>
    
    <img src="images/jacob.png" onclick="Jacob(1);" />
    <img src="images/jacob.png" onclick="Jacob(2);" />
